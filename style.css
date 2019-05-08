@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.grid-logos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 5;
+    grid-gap: 2%;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+}
+.autorow-12 {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto 100px;
+}
+
+
+.section-a {
+    overflow: hidden;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#background-a {
+    background-color: rgb(0, 26, 58);
+}
+
+.background-b {
+    background-color: rgba(36, 36, 36, 0.712);
+}
+
+#myVideo {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    object-fit: scale-down;
+    right: 0;
+    bottom: 0;
+     min-width: 100%; 
+     min-height: 100%;
+     mix-blend-mode: multiply;
+     overflow-x: hidden;
+}
+
+#title {
+    letter-spacing: .1em;
+    grid-row: 7;
+    grid-column: 4/ span 7;
+    color: #df7904;
+    font-family: 'Anton', sans-serif;
+    font-size: 10em;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    mix-blend-mode: color-dodge;
+}
+
+#alive {
+    letter-spacing: .1em;
+    grid-row: 8;
+    grid-column: 4/ span 7;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: .2s;
+    mix-blend-mode: hard-light;
+}
+
+.tag {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(32, 15, 15);
+    overflow-x: hidden;
+
+}
+
+#save {
+    grid-row: 5;
+    grid-column: 4/span 6;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    color: rgb(243, 243, 243);
+    text-align: center;
+}
+
+#info {
+    background-color: #00b5bb;
+}
+.sections {
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    /* background-image: url(/img/animal-diving-sea-turtle-10467.jpg);
+    background-position: center bottom;
+    background-size: cover; */
+}
+
+.sections > h2 {
+    grid-row: auto;
+    grid-column: 2/4;
+    font-size: 1.6em;
+    color: aquamarine;
+}
+
+#pollution {
+    grid-row: 3;
+    grid-column: 2/6;
+}
+
+#causes {
+    text-align: right;
+    grid-row: 4;
+    grid-column: 9/11;
+}
+#causesp {
+    text-align: right;
+    grid-row: 5;
+    grid-column: 8/11;
+}
+
+#categories {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    grid-row: 7;
+    grid-column: 1/-1;
+    background-color: rgb(9, 64, 112);
+    text-align: center;
+    padding-top: 1%;
+    margin: 5% 0;
+}
+
+#groundwater { 
+    grid-row: 8;
+    grid-column: 2/4;
+}
+#groundwaterp {
+    grid-row: 9;
+    grid-column: 2/6;
+}
+
+#surface {
+    text-align: right;
+    grid-row: 10;
+    grid-column: 8/11;
+}
+#surfacep {
+    text-align: right;
+    grid-row: 11;
+    grid-column: 7/11;
+}
+
+#ocean {
+    grid-row: 12;
+    grid-column: 2/4;
+}
+#oceanp{
+    grid-row: 13;
+    grid-column: 2/6;
+    
+}
+button {
+    background-color: rgb(0, 163, 218);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    color: white;
+    padding: 15px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 4px 2px;
+    cursor: pointer;
+    grid-row: 6;
+    grid-column: 6/ span 2;
+    transition-duration: 0.35s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: rgb(48, 111, 136);
+
+}
+
+#player {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#voice {
+    margin-top: 100px;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    grid-row: 1;
+    grid-column: 6/-1;
+    color: bisque;
+    text-align: center;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+#voicep {
+    color: bisque;
+    font-family: 'Anton', sans-serif;
+    grid-row: 2;
+    grid-column: 6/-1;
+    margin-top: -440px;
+    text-align: center;
+    margin-right: 15%;
+}
+
+.logos {
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+}
+
+.logos >img {
+    width: 200px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50%;
+}
+
+#img1 {
+ grid-column: 2;
+}
+#img2 {
+    grid-column: 3;
+   }
+   #img3 {
+    grid-column: 4;
+   }
+   #img4 {
+    grid-column: 5;
+   }
+   #img5 {
+    grid-column: 6;
+   }
+   #img6 {
+    grid-column: 7;
+   }
+   #img7 {
+    grid-column: 2;
+   }
+   #img8 {
+    grid-column: 3;
+   }
+   #img9 {
+    grid-column: 4;
+   }
+   #img10 {
+    grid-column: 5;
+   }
+   #img11 {
+    grid-column: 6;
+   }
+   #img12 {
+    grid-column: 7;
+   }
